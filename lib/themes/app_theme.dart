@@ -14,12 +14,34 @@ class AppTheme {
     //FloatingActionButton Theme
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: primary, elevation: 0.5),
-
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         primary: primary,
         shape: const StadiumBorder(),
         elevation: 0,
+      ),
+    ),
+    inputDecorationTheme: const InputDecorationTheme(
+      floatingLabelStyle: TextStyle(color: primary),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: primary),
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(10),
+          bottomLeft: Radius.circular(10),
+        ),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.green),
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(10),
+          bottomLeft: Radius.circular(10),
+        ),
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(10),
+          bottomLeft: Radius.circular(10),
+        ),
       ),
     ),
   );

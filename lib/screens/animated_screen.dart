@@ -45,7 +45,7 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
           color: _color,
         ),
         duration: const Duration(milliseconds: 500),
-        curve: Curves.elasticOut,
+        curve: Curves.bounceIn,
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: changeShape,
